@@ -19,12 +19,14 @@ class _DetialViewExampleState extends State<DetialViewExample> {
   bool _bookmarkedStatus = false;
 
   Future<void> getStatus() async {
-    bool res = await bookMarkController.addBookMark(widget.recipeModel);
+    RecipeModel? recipeModel;
+    bool response = (await bookMarkController.addBookMark(recipeModel!)) as bool;
 
     setState(() {
-      _bookmarkedStatus = res;
+      _bookmarkedStatus = response;
     });
   }
+
 
   @override
   void initState() {
