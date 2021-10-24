@@ -1,6 +1,6 @@
 # recipe_app
 
-A new Flutter project.
+TOT assesment 
 
 ## Instructions
 pre: clone the repository
